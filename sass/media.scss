@@ -1,0 +1,195 @@
+@media only screen and (max-width: 1200px) and (min-width:768px){ 
+    body{
+        header{
+            .header__content{
+                padding:50px 0;
+                height: 120px;
+                .burger{
+                    display: none;
+                }
+            }
+        }
+        main{
+            section{
+                .left-site{
+                    padding:20px;
+                }
+                .new__nav{
+                    display: none;
+                }
+                .right-site{
+                    .main__asosiy{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 20px;
+                    }
+                    .fan__resuslari{
+                        display: grid;
+                        gap: 50px;
+                        grid-template-columns: 1fr 1fr;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items:center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        footer{
+            padding:0 50px;
+            nav{
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:767px){ 
+    body{
+        header{
+            .header__content{
+                height: 12vh;
+                div{
+                    h1{
+                        font-size: 30px;
+                    }
+                }
+                nav{
+                    ul{
+                        display: none;
+                    }
+                }
+                .burger{
+                    display: block;
+                }
+                .toggle{
+                    display: block;
+                    .line-1{
+                        transform: rotate(-45deg) translate(-6px,0px);
+                    }
+                    .line-2{
+                        display: none;
+                    }
+                    .line-3{
+                        transform: rotate(45deg) translate(-6px,0px);
+                    }
+                }
+            }
+        }
+        main{
+            section{
+                position: relative;
+                .left-site{
+                    display: none;
+                }
+                .new__nav{
+                    display: block;
+                    width:100%;
+                    background-color:#222d32;
+                    position: absolute;
+                    height:88vh;
+                    top:0;
+                    left: 0;
+                    transform: translateX(-100%);
+                    transition:0.5s ease-in;
+                    z-index: 999999;
+                    padding:20px;
+                    nav{
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            align-items:flex-start;
+                            list-style:none;
+                            row-gap: 30px;
+                            span{
+                                display: flex;
+                                align-items:center;
+                                column-gap:10px;
+                                i{
+                                    color:#fff;
+                                }
+                                li{
+                                    a{
+                                        font-size:20px;
+                                        font-weight: 500;
+                                        color:#fff;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .nav__activ{
+                    transform: translateX(0%);
+                }
+                .right-site{
+                    width: 100%;
+                    padding:10px 20px;
+                    .main__asosiy{
+                        display:flex;
+                        flex-direction: column;
+                        article{
+                            display: flex;
+                            row-gap: 20px;
+                            .left__img{
+                                width: 80%;
+                                height:90%;
+                                margin:20px 0;
+                                img{
+                                    width: 200px;
+                                }
+                            }
+                            .right__text{
+                                h3{
+                                    font-size: 20px;
+                                }
+                                p{
+                                    font-size: 18px;
+                                    padding:0 10px;
+                                }
+                            }
+                        }
+                    }
+                    h2{
+                        font-size:24px;
+                        margin:10px 0;
+                    }
+                }
+                .fan__resuslari{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap:20px;
+                }
+                .main__malumotlar{
+                    p{
+                        padding:10px;
+                    }
+                }
+                .main__organish{
+                    padding:10px;
+                }
+            }
+        }
+        footer{
+            .footer__content{
+                display: flex;
+                flex-direction: column-reverse;
+                row-gap: 20px;
+                nav{
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                    }
+                }
+            }
+            :root {
+                scroll-behavior: smooth;
+              }
+        }
+    }
+}
